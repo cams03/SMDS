@@ -1,0 +1,145 @@
+/* Classes Flexbox
+-----------------------------------------------------------------------------*/
+	.flex_col {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+	.flex_row {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;}
+	.justify_center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+	.justify_start {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+	.justify_end {-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+	.justify_around {-ms-flex-pack: distribute;justify-content: space-around;}
+	.justify_between {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+	.align_center {-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+	.align_start {-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+	.align_end {-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+	.wrap {-ms-flex-wrap: wrap;flex-wrap: wrap;}
+	.s-fixed {-ms-flex: 0 0 auto;-webkit-box-flex: 0;flex: 0 0 auto;}
+	.flex_grow {-webkit-flex-grow: 1;-ms-flex-positive: 1;flex-grow: 1;}
+/* Fin Classes Flexbox
+-----------------------------------------------------------------------------*/
+
+/*Limitation du texte*/
+	.txt_overflow {
+		overflow: hidden;
+		white-space: nowrap;
+		-o-text-overflow: ellipsis;
+		   text-overflow: ellipsis; 
+   	}
+/* GENERAL
+-----------------------------------------------------------------------------*/
+.main_content strong, section strong {color: #eb6714;}
+.navbar-dark .navbar-toggler {border:2px solid rgba(227, 223, 223, 0.8);}
+
+aside.col-2 {
+	background-color: #eb6714;
+	color: #fff;
+	position: fixed;
+	right: 2px;
+	top: 20%;
+	padding: 42px 5px;
+	font-weight: bold;
+	border-radius: 8px;
+	box-shadow: 0px 1px 7px #bebebe;
+}
+aside.col-2 .row {
+	text-align: center;
+	font-size: 20px;
+}
+#gallerie header.container-fluid, #about header.container-fluid, #contact header.container-fluid {
+	background-color: #eb6714;
+	background-image: none;
+	padding-bottom: 0;
+}
+#gallerie .jumbotron-fluid h1, #about .jumbotron-fluid h1, #contact .jumbotron-fluid h1{
+	font-weight: 600;
+	color: #FFF;
+	text-shadow: none;
+}
+.email a {
+	color: white;
+	font-size: 15px;
+}
+/* PAGE HOME
+-----------------------------------------------------------------------------*/
+header.container-fluid {
+	background-image: url(img/en_tete.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 45px;
+}
+.header_top {
+	background-color: rgba(0,0,0,0.4);
+	padding: 10px 0;
+}
+
+.logo {width: 100%;}
+.menu {padding-right: 0;color: white;}
+.navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav .nav-item.active .nav-link {
+	color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.navbar-expand-md .navbar-nav .nav-item.active .nav-link{
+	border-bottom: 3px solid white;
+}
+.jumbotron-fluid {
+	background-color: transparent;
+    color: white;
+    text-align: center;
+}
+.jumbotron-fluid h1{
+	font-weight: 600;
+	color: #000;
+	text-shadow: 1px 1px 5px white;
+}
+.menu_bottom {
+	background-color: #eb6714;
+	color: #fff;
+	font-size: 20px;
+}
+.menu_bottom .navbar-expand-md .navbar-nav .nav-link:hover  {
+	background-color: #fff;
+	color:#eb6714;
+	transition: all 0.3S linear;
+}
+.main_content {margin: 25px 0;}
+.carousel-inner {
+	min-height: 450px;
+	height: 450px;
+}
+footer {
+	background-color: #eb6714;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+/* PAGE A PROPOS
+---------------------------------------------------------------------------------*/
+#about section {
+	margin: 20px auto;
+	height: 65vh;
+}
+section img {width: 100%;}
+section .more  {justify-content: center;}
+section .more a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #eb6714;
+    padding: 10px;
+}
+
+/* PAGE GALLERIE
+---------------------------------------------------------------------------------*/
+.gallerie .img_item {margin-top: 10px;}
+.gallerie .img_item:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+
+
+
+/* PAGE CONTACT
+---------------------------------------------------------------------------------*/
